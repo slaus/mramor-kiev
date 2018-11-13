@@ -1,9 +1,4 @@
-/*!
-Template Name: Industrial - HTML Template
-Author: Softnio
-Version: 1.2.2
-Update: 01.15.2018
-*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:700|Source+Sans+Pro:300,600');
 
 @font-face {
     font-family: 'Roboto';
@@ -55,11 +50,11 @@ Update: 01.15.2018
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     color: #6e7889;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.75;
-    font-weight: 400
+    font-weight: 300
 }
 
 html,
@@ -73,9 +68,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Serif', serif;
     line-height: 1.25;
-    font-weight: 600
+    font-weight: 700
 }
 
 h1.color-secondary,
@@ -118,13 +113,13 @@ h1,
 .h1,
 .heading-lg,
 .heading-lg-lead {
-    font-size: 2.25em;
+    font-size: 1.75em;
     color: #1863AB
 }
 
 h2,
 .h2 {
-    font-size: 1.875em;
+    font-size: 1.475em;
     color: #1863AB
 }
 
@@ -134,20 +129,20 @@ h4,
 .h4,
 .heading-md,
 .heading-md-lead {
-    font-size: 1.45em;
+    font-size: 1.25em;
     font-weight: 600;
     color: #353a42
 }
 
 h4,
 .h4 {
-    font-size: 1.25em;
+    font-size: 1.05em;
     color: #353a42
 }
 
 h5,
 .h5 {
-    font-size: 1.125em;
+    font-size: 0.925em;
     font-weight: 700;
     color: #353a42
 }
@@ -156,7 +151,7 @@ h6,
 .h6,
 .heading-sm,
 .heading-sm-lead {
-    font-size: .875em;
+    font-size: .675em;
     color: #353a42;
     font-weight: 700
 }
@@ -2535,6 +2530,9 @@ form label.error {
     display: block;
     opacity: 0;
     width: 240px;
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
     visibility: hidden;
     transition: opacity .3s, visibility .4s
 }
@@ -8679,4 +8677,13 @@ h3.heading-lead+.lead {
 .demo-sample-icon hr {
     margin-top: 25px;
     margin-bottom: 25px
+}
+@media only screen and (max-width: 767px){
+    .navbar-nav li .dropdown-menu li a {
+        text-align: center;
+        font-size: 18px;
+    }
+    .navbar-nav li a {
+        text-align: center;
+    }
 }
