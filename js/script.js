@@ -258,8 +258,8 @@
 	}
 
 	// search click open
-	var $btnOn = $("i.on")
-	var $dropdown = $(".search-dropdown")
+	var $btnOn = $("i.on");
+	var $dropdown = $(".search-dropdown");
 	$btnOn.click(function(e){
 		e.stopPropagation();
 		$dropdown.addClass("open");
@@ -274,6 +274,19 @@
 			}
 		}
 	});
+
+    //Masonry
+    $(window).on('load', function () {
+
+        $('.masonry').masonry({
+            columnWidth : '.grid-sizer',
+            gutter : 15,
+            itemSelector : '.masonry-item',
+            percentPosition : 'true',
+            fitWidth: true,
+        });
+
+    });
 
 
 }(jQuery);
